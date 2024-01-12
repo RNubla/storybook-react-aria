@@ -13,7 +13,7 @@ interface SelectProps {
     /**
      * List of options
      */
-    options: []
+    options?: []
 }
 
 export const Select = ({ label, options, ...props }: SelectProps) => {
@@ -28,7 +28,7 @@ export const Select = ({ label, options, ...props }: SelectProps) => {
             </Button>
             <Popover className='w-[--trigger-width] bg-ligh shadow-xl  border-solid border-2 rounded-lg'>
                 <ListBox renderEmptyState={() => 'There None'}>
-                    {options.map((v, idx) => (
+                    {options?.length > 0 && options.map((v, idx) => (
                         <SelectOption key={v.id}>{v.title}</SelectOption>
                     ))}
                 </ListBox>

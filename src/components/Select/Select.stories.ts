@@ -21,3 +21,9 @@ export const Primary: Story = {
         selectValue: "hi"
     }
 }
+
+export const Error: Story = {
+    args: {
+        label: "Error Example",
+    }
+}
