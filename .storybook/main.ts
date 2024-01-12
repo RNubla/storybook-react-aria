@@ -9,6 +9,11 @@ const config: StorybookConfig = {
     "@storybook/addon-interactions",
     '@storybook/addon-a11y'
   ],
+  typescript: {
+    reactDocgen: "react-docgen",
+    skipBabel: true,
+    check: false,
+  },
   framework: {
     name: "@storybook/react-vite",
     options: {},

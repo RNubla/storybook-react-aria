@@ -17,6 +17,7 @@ type Story = StoryObj<typeof meta>
 export const Primary: Story = {
     args: {
         label: "Select",
-        options: [{ id: 0, title: "Call of Duty" }]
+        options: [{ id: 0, title: "Call of Duty" }],
+        selectValue: "hi"
     }
 }
